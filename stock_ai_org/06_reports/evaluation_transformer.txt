@@ -1,0 +1,6 @@
+Model Type: transformer
+Status: REJECTED
+Sharpe Ratio: -0.07
+Max Drawdown: -11.64%
+Total Return: -0.79%
+Evaluated At: 2026-05-17T22:40:02.354054

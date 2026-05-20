@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "bd875ba64bffec63",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2b0c60aeb4331d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c33945360ddb081",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "stock_ai_org/01_research/papers/pdf/sample_paper_id.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "sample_paper_id"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ef1fe4a8bf35ffab",
+    "type": "split",
+    "children": [
+      {
+        "id": "855da17c8343e49d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "212735296532ec6f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "e6deff8ef10f8679",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "7edae2f346704002",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "76cdc6e5fa5b746c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7bb1c61f9834656",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86676ab1052189e9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "バックリンク"
+            }
+          },
+          {
+            "id": "b884f1a66c747d35",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "アウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "e22d6a33a8834df2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "685789121ce63f2d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "すべてのプロパティ"
+            }
+          },
+          {
+            "id": "c7b3a9eed96e90f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "アウトライン"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "bases:新規ベースを作成": false
+    }
+  },
+  "active": "7c33945360ddb081",
+  "lastOpenFiles": [
+    "無題のファイル.base",
+    "リンクを作成.md",
+    "ようこそ.md",
+    "AI-Organization-Template.md",
+    "2026-05-17.md",
+    "stock_ai_org/README.md",
+    "stock_ai_org/requirements.txt",
+    "stock_ai_org/08_infra/docker-compose.yml",
+    "stock_ai_org/07_deploy/app.py",
+    "stock_ai_org/05_backtest/engine.py",
+    "stock_ai_org/03_models/ensemble/model.py",
+    "stock_ai_org/03_models/nbeats/model.py",
+    "stock_ai_org/03_models/tft/model.py",
+    "stock_ai_org/03_models/transformer/model.py",
+    "stock_ai_org/03_models/lstm/model.py",
+    "stock_ai_org/02_agents/report_agent/agent.py"
+  ]
+}

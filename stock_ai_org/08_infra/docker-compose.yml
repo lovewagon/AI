@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: stock_ai_postgres
+    environment:
+      POSTGRES_USER: ai_manager
+      POSTGRES_PASSWORD: secure_password_2026
+      POSTGRES_DB: stock_ai_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - ai_network
+
+  minio:
+    image: minio/minio
+    container_name: stock_ai_minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minio_admin
+      MINIO_ROOT_PASSWORD: minio_password_2026
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    networks:
+      - ai_network
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.10.2
+    container_name: stock_ai_mlflow
+    ports:
+      - "5000:5000"
+    command: mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:///mlflow.db --default-artifact-root s3://mlflow-artifacts
+    environment:
+      - AWS_ACCESS_KEY_ID=minio_admin
+      - AWS_SECRET_ACCESS_KEY=minio_password_2026
+      - MLFLOW_S3_ENDPOINT_URL=http://minio:9000
+    depends_on:
+      - minio
+    networks:
+      - ai_network
+
+networks:
+  ai_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  minio_data:
