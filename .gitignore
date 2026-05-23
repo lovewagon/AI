@@ -4,3 +4,6 @@ __pycache__/
 .obsidian/
 *.tsv
 *.log
+.env 
+.env.local 
+**/secrets/ 
